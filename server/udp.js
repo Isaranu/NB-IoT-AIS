@@ -32,7 +32,7 @@ server.on("message", function (message, remote) {
 
 server.bind(PORT);
 
-/*
+/* Route get data to Dashboard */
 const express = require('express');
 const app = express();
 var port = 4000;
@@ -44,7 +44,7 @@ app.get('/read/', function (req, res) {
   db_udp_read.find({}).limit(10).sort({utc:-1}, function(err, docs){
     if(err) return console.log('read failed');
     console.log(docs);
-    //res.send(docs[0].data);
+    res.send(docs[0].data);
   });
 });
 
@@ -52,4 +52,3 @@ app.listen(port, function () {
   var nodeStartTime = new Date();
   console.log('-- [Write] Protocol start running on port ' + port + ' at ' + nodeStartTime + ' --');
 });
-*/
