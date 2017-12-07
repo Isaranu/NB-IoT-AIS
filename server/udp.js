@@ -21,7 +21,7 @@ server.on("message", function (message, remote) {
     var utc = d.getTime();
 
     db_udp_col.insert({
-      data: message,
+      data: String(message),
       utc: Number(utc)
 
     }, function(err){
