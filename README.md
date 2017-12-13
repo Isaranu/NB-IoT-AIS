@@ -7,7 +7,7 @@ udp.js, run with Node.js on Google Cloud Platform<br>
 <h3><b>Device</b></h3>
 Test on ThaiEasyElec's ESPino32 for trial send data to GCP via UDP connection.<br>
 <h3><b>Dashboard</b></h3>
-(Coming soon).
+(Coming soon)<br>
 <br>
 Contact<br>
 Facebook : Isaranu Janthong<br>
